@@ -1,2 +1,2 @@
-# 2d--Game-engine-
-2d sfml and C/Cplusplus game. 
+# 2D Game engine
+SFML poject
