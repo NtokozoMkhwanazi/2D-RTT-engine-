@@ -16,6 +16,9 @@ This project demonstrates:
 
 The goal is to create a foundation for a small 2D platformer or a learning prototype for game engine concepts.
 
+<img width="1366" height="768" alt="pii" src="https://github.com/user-attachments/assets/4b5d98a6-54ed-4d68-8d93-b235a2dbe480" />
+
+
 ---
 
 ## 🎮 Features
