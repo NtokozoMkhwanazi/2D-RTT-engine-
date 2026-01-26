@@ -1,5 +1,135 @@
-# 2D GAME ENGINE
-Simple single player  2d engine using its custom Physics System and Animation system is written in ECS style to make it modular and easily readable. written in C++ using SFML.
+# Sprite Player Demo
 
-# Where are we now? 
-The Animation of this 2d is still faulty. First we used a single sprite image file to create some animation based on the label of each frame on the sprite image e.g like if the sprite image has like an idle and walk and run then each animation is resolved  based on the frame selected. This way might be inconsistent but the animation is sort of rendered. 
+A simple 2D platformer demo built with **SFML** featuring a sprite-based player with animation, physics, and collision detection.
+
+---
+
+## 🕹 Project Overview
+
+This project demonstrates:
+
+* Loading and rendering **backgrounds** and **sprites**
+* **Player movement**: walking, jumping
+* **Animation system** for different player states (idle, walk, jump)
+* **Physics system**: gravity and collision with platforms
+* Simple **Entity Component System (ECS)** for managing entities
+
+The goal is to create a foundation for a small 2D platformer or a learning prototype for game engine concepts.
+
+---
+
+## 🎮 Features
+
+* Player movement (left, right, jump)
+* Animated player sprite
+* Platforms with collision detection
+* Scalable background
+* ECS-based architecture for clean entity management
+
+---
+
+## 🛠 Tech Stack
+
+* **Language:** C++
+* **Graphics / Windowing:** SFML
+* **Animation:** Sprite sheet handling
+* **Physics:** Gravity + collision detection
+* **Architecture:** Simple ECS (Entity Component System)
+
+---
+
+## 📂 Project Structure
+
+```
+SpritePlayerDemo/
+├── assets/
+│   ├── player.png      # Player sprite sheet
+│   └── background.png  # Background image
+├── src/
+│   ├── Game.h
+│   ├── Game.cpp
+│   ├── Player.cpp
+│   ├── Player.h
+│   ├── Systems/
+│   │   ├── AnimationSystem.cpp
+│   │   ├── PhysicsSystem.cpp
+│   │   └── PlayerSystem.cpp
+│   └── ECS/
+├── CMakeLists.txt or Makefile
+└── README.md
+```
+
+---
+
+## ▶️ How to Run
+
+1. Install **SFML** on your system:
+   [SFML Installation Guide](https://www.sfml-dev.org/tutorials/2.5/)
+
+2. Clone the repo:
+
+```bash
+git clone https://github.com/NtokozoMkhwanazi/SpritePlayerDemo.git
+cd SpritePlayerDemo
+```
+
+3. Compile the project:
+
+```bash
+g++ src/*.cpp -o SpritePlayerDemo -lsfml-graphics -lsfml-window -lsfml-system
+```
+
+4. Run the game:
+
+```bash
+./SpritePlayerDemo
+```
+
+5. Controls:
+
+* **A** → Move left
+* **D** → Move right
+* **Space** → Jump
+
+---
+
+## 📖 How It Works
+
+1. **Game Initialization**
+
+   * Loads background and scales to window
+   * Creates floor/platform
+   * Initializes player on top of floor
+
+2. **Game Loop**
+
+   * Handles input (left/right/jump)
+   * Updates player system (movement)
+   * Updates physics system (gravity + collisions)
+   * Updates animation system (state & direction)
+   * Renders background, player, and platforms
+
+3. **Player States**
+
+   * `Idle` → standing still
+   * `Walk` → moving left or right
+   * `Jump` → in the air (up or falling down)
+
+---
+
+## 🎯 Learning Outcomes
+
+* Understanding **basic ECS architecture**
+* Implementing **sprite-based animations**
+* Handling **2D physics and collisions**
+* Working with **SFML graphics library**
+
+---
+
+## 📫 Contact
+
+For questions or feedback: [NtokozoMkhwanazi](https://github.com/NtokozoMkhwanazi)
+
+---
+
+> “Build small, learn fast, iterate endlessly.”
