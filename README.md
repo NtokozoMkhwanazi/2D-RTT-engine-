@@ -1,6 +1,6 @@
 # Sprite Player Demo
 
-A simple 2D platformer demo built with **SFML** featuring a sprite-based player with animation, physics, and collision detection.
+A simple 2D platformer demo built with **SFML** featuring a sprite-based player with animation, physics, and collision detection. This is for Learning what game engine development is about.    
 
 ---
 
@@ -123,16 +123,9 @@ g++ src/*.cpp -o SpritePlayerDemo -lsfml-graphics -lsfml-window -lsfml-system
 ## 🎯 Learning Outcomes
 
 * Understanding **basic ECS architecture**
-* Implementing **sprite-based animations**
-* Handling **2D physics and collisions**
+* Learning  **sprite-based animations**
+* Learning **2D physics and collisions**
 * Working with **SFML graphics library**
 
 ---
 
-## 📫 Contact
-
-For questions or feedback: [NtokozoMkhwanazi](https://github.com/NtokozoMkhwanazi)
-
----
-
-> “Build small, learn fast, iterate endlessly.”
